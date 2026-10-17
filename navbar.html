@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    nav {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(16, 16, 130);
+        padding: 0 60px;
+
+        font-family: sans-serif;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .E-Co {
+        width: 40%;
+        /* background-color: red; */
+    }
+
+    .menu {
+        width: 40%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: brown; */
+    }
+
+    .menu span {
+        vertical-align: bottom;
+        margin-right: 5px;
+    }
+    .menu div{
+        padding: 5px;
+        transition: all 0.3s;
+    }
+    .menu div:hover{
+        background-color: blue;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .menu :nth-child(5){
+        background-color: aqua;
+        border-radius: 5px;
+        color: black;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="E-Co">
+                <h2>E-COMMERCE</h2>
+            </div>
+            <div class="menu">
+                <div><span class="material-symbols-outlined">
+                        home
+                    </span>Home</div>
+                <div><span class="material-symbols-outlined">
+                        article_person
+                    </span>About Us</div>
+                <div>Skill</div>
+                <div>Project</div>
+                <div>Contact</div>
+            </div>
+        </nav>
+    </div>
+</body>
+
+</html>

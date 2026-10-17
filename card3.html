@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .control{
+        width: 100%;
+        height: 100vh;
+
+        background-color: rgb(24, 199, 199);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+    }
+    .product{
+        width: 400px;
+        height: auto;
+        background-color: white;
+        padding: 40px 30px;
+    }
+    .head{
+        width: 100%;
+        height: 100px;
+    }
+    .head label{
+        display: block;
+        margin-top: 7px;
+        line-height: 25px;
+        color: gray;
+    }
+
+    .image{
+        width: 100%;
+        height: 150px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image img{
+        width: 80%;
+        object-fit: contain;
+    }
+
+    /* select color */
+    .select-color{
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+    }
+    .select-color input{
+        display: none;
+    }
+    .select-color label{
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 8px;
+        cursor: pointer;
+    }
+    .red{
+        background-color: red;
+    }
+    .blue{
+        background-color: blue;
+    }
+    .black{
+        background-color: black;
+    }
+    .orange{
+        background-color: orange;
+    }
+    .select-color input:checked + label{
+        outline: 2px solid gray;
+        outline-offset: 3px;
+        /* box-shadow: 0 0 0 3px gray;
+        transform: scale(1.03); */
+    }
+
+    /* price-btn */
+    .price-btn{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        color: rgb(24, 199, 199);
+    }
+    .btn button{
+        padding: 10px 20px;
+        border-radius: 20px;
+        border-color: rgb(24, 199, 199);
+        color: rgb(24, 199, 199);
+        background-color: white;
+    }
+</style>
+<body>
+    <div class="control">
+        <div class="product">
+            <div class="head">
+                <h2>ORIGINAL COLOR SHOES</h2>
+                <label for="">SHOES WITH DIFFERENT COLOR AND BACKGROUND</label>
+            </div>
+
+            <div class="image">
+                <img src="image/shoes.png" alt="">
+            </div>
+
+            <div class="select-color">
+                <form action="">
+                    <input type="radio" id="red" name="color" checked>
+                    <label for="red" class="red"></label>
+
+                    <input type="radio" id="blue" name="color">
+                    <label for="blue" class="blue"></label>
+
+                    <input type="radio" id="black" name="color">
+                    <label for="black" class="black"></label>
+
+                    <input type="radio" id="orange" name="color">
+                    <label for="orange" class="orange"></label>
+                </form>
+            </div>
+
+            <div class="price-btn">
+                <div class="price">
+                    <h2>$90</h2>
+                </div>
+                <div class="btn">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

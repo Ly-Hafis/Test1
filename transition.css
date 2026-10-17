@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.control{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-card{
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0 2px 5px 1px gray;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image */
+.product-card .image{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid gray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dis */
+.dis{
+    margin-top: 20px;
+}
+.dis .icon span{
+    color: rgb(245, 204, 1);
+    font-size: 20px;
+    font-weight: bold;
+}
+.price :nth-child(1){
+    font-size: 15px;
+    color: gray;
+}
+.price :nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
+}
+button{
+    margin-top: 5px;
+    padding: 7px 50px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    transition: all 0.3s;
+}
+button:hover{
+    background-color: red;
+}
+
+/* Add-favorite */
+.add-favorite{
+    width: 120px;
+    height: 25px;
+    background-color: blueviolet;
+    padding: 3px 6px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    top: 170px;
+    right: 120px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.add-favorite:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.product-card:hover .add-favorite{
+    opacity: 100%;
+}
+.add-favorite :nth-child(1){
+    color: white;
+    font-size: 20px;
+}
+.add-favorite :nth-child(2){
+    color: white;
+    font-size: 12px;
+}
+
+/* Menu icon */
+.menu{
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    bottom: 20px;
+    right: -50px;
+    transition: all 0.3s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menu span{
+    padding: 7px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    transition: all 0.3s;
+}
+.product-card:hover .menu{
+    transform: translateX(-65px);
+}
+.menu span:hover {
+    transform: scale(1.1);
+    background-color: red;
+    cursor: pointer;
+}
